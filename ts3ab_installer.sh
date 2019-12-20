@@ -112,4 +112,9 @@ if [ "$opt1" = "2" ]; then
   echo ""
   echo -e "\e[1m\e[92mEine genaue Anleitung zum Einrichten findest du hier:\e[0m"
   echo -e "\e[1m\e[92m-> https://server-installer.de/einrichtung/ts3audiobot\e[0m"
+ fi
+ 
+if [ "$opt1" = "3" ]; then
+  clear
+  echo "\e[1m\e[92mVielen Dank für das benutzen des Skripts!\e[0m"
 fi
