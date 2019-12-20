@@ -10,6 +10,7 @@ clear
 echo "Pakete werden nun installiert..."
 sleep 2
 apt-get update && apt-get upgrade -y
+apt install sudo && unzip
 clear
 
 if [ ! '/usr/bin/screen' ]; then
