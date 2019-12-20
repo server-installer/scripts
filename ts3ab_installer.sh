@@ -21,6 +21,15 @@ if [ ! '/usr/bin/screen' ]; then
 
 fi
 
+if [ ! '/usr/bin/unzip' ]; then
+  echo "Pakete werden nun installiert..."
+  sleep 2
+  clear
+  apt-get install screen -y
+  clear
+
+fi
+
 if [ ! '/etc/sudo' ]; then
   echo "Pakete werden nun installiert..."
   sleep 2
@@ -112,8 +121,8 @@ if [ "$opt1" = "2" ]; then
   echo ""
   echo -e "\e[1m\e[92mEine genaue Anleitung zum Einrichten findest du hier:\e[0m"
   echo -e "\e[1m\e[92m-> https://server-installer.de/einrichtung/ts3audiobot\e[0m"
- fi
- 
+fi
+
 if [ "$opt1" = "3" ]; then
   clear
   echo "\e[1m\e[92mVielen Dank für das benutzen des Skripts!\e[0m"
